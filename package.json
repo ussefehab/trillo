@@ -1,0 +1,26 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "Landing page for ttrillo",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass  prefix:css compress:css"
+  },
+  "author": "youssef",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1",
+    "sass": "^1.77.2"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
