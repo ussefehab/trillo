@@ -3,7 +3,7 @@
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow:var(--shadow-dark);
-    height: 50rem;
+    height: 100%;
 }
 
 .header{
@@ -35,6 +35,22 @@
 .hotel-view{
     background-color: #fff;
     flex: 1;
-    height: 80vh;
+}
+.detail{
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: 1px solid var(--color-grey-dark-3);
 
+}
+.description{
+    font-size: 1.4rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+}
+.user-reviews{
+    background-color: bisque;
+    flex: 1;
 }
