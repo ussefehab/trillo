@@ -30,6 +30,13 @@ Grey dark 3: #999
     --shadow-dark :  0 2rem 6rem rgba(0, 0, 0, 0.3);
     --shadow-light :  0 2rem 6rem rgba(0, 0, 0, 0.208);
 }
+$bp-largest:75em; //1200px
+$bp-larg:68.75em; //1100px
+$bp-medium:56.25em; //900px
+$bp-small:40em; //600px
+$bp-smallest:31.25em ;//500px
+$bp-phone:26em;
+
 
 * {
     margin: 0;
@@ -45,6 +52,14 @@ Grey dark 3: #999
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width:$bp-larg){
+        font-size: 50%;
+    }
+    @media only screen and (max-width:$bp-phone) {
+
+        font-size: 35%;
+
+    }
 }
 body{
     font-family: 'open sans', sans-serif;
